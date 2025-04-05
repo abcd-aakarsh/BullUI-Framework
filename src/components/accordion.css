@@ -1,0 +1,68 @@
+.accordion {
+  width: 100%;
+
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+}
+
+.accordion input {
+  display: none;
+}
+
+.accordion-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 14px 16px;
+  background: #fcfcfc;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out, padding 0.2s ease-in-out;
+}
+
+.accordion-header:hover {
+  background: #f5f5f5;
+}
+
+.accordion-header .arrow {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Smooth cubic transition */
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  background: #fff;
+  padding: 0 16px;
+  font-size: 1rem;
+  color: #333;
+  border-left: 2px solid transparent;
+  transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out,
+    opacity 0.3s ease-in-out;
+}
+
+.accordion input:checked + .accordion-header + .accordion-content {
+  max-height: 200px;
+  padding: 10px 16px;
+  opacity: 1;
+  border-left: 2px solid #555;
+}
+
+/* Smooth arrow rotation */
+.accordion input:checked + .accordion-header .arrow {
+  transform: rotate(180deg);
+}
+
+/* Add a shadow effect when open */
+.accordion input:checked + .accordion-header {
+  background: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 16px;
+}

@@ -1,0 +1,62 @@
+/* Base Button Styling */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  text-decoration: none; /* For anchor tags */
+  outline: none;
+}
+
+/* Ensure buttons and links behave the same */
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+/* Button Color Variants */
+.btn-orange {
+  background-color: #ff7f00;
+  color: white;
+}
+
+.btn-orange:hover {
+  background-color: #e66b00;
+}
+
+.btn-black {
+  background-color: #222;
+  color: white;
+}
+
+.btn-black:hover {
+  background-color: #444;
+}
+
+.btn-blue {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-blue:hover {
+  background-color: #0056b3;
+}
+
+/* Disabled State */
+.btn:disabled,
+.btn[disabled],
+.btn.disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  opacity: 0.6;
+  pointer-events: none;
+}

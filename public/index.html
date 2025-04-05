@@ -8,17 +8,122 @@
     <link rel="stylesheet" href="./assets/styles.css" />
   </head>
   <body>
-    <div>Thid is Bull UI</div>
-    <div><p>Hero Component</p></div>
+    <!-- Navbar Component -->
+
     <div>
-      <p>Card Component</p>
+      <nav class="navbar">
+        <div class="nav-logo">Logo</div>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+          <li>
+            <a
+              href="#"
+              style="color: white; font-size: 16px; border-radius: 999px"
+              class="btn btn-black"
+              >Get Started</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Hero Component -->
+    <div>
+      <div style="height: 90vh" class="hero">
+        <div class="hero-content">
+          <h1 class="hero-title">The Tale of Naruto Uzumaki</h1>
+          <p class="hero-description" style="margin-bottom: 8px">
+            The journey of a boy shunned by his village who rises to become the
+            greatest Hokage, proving that perseverance, friendship, and courage
+            can defy destiny.
+          </p>
+          <a href="#" class="btn btn-orange">Know More</a>
+        </div>
+        <div class="hero-image">
+          <img
+            src="https://images3.alphacoders.com/134/thumb-1920-1342988.png"
+            alt="Hero Image"
+          />
+        </div>
+      </div>
+    </div>
+    <div>
+      <h1 style="text-align: center; font-size: 64px; margin-bottom: 44px">
+        Card Component
+      </h1>
+    </div>
+    <!-- Card Component -->
+    <div
+      style="
+        margin-bottom: 40px;
+        padding: 0 24px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+        justify-content: center;
+      "
+    >
       <div class="card">
         <img
           src="https://images3.alphacoders.com/132/thumbbig-1328396.webp"
-          alt="A starry night"
+          alt="itachi"
           class="card-img"
         />
+        <div class="card-content">
+          <h2 class="card-title">Itachi Uchiha</h2>
+          <p class="card-description">
+            Itachi Uchiha, a genius of the Uchiha clan, mastered the Mangekyō
+            Sharingan and joined the Akatsuki. Seen as a traitor but truly a
+            hero, he sacrificed everything for peace and his brother.
+          </p>
+          <a href="#" class="card-btn">Explore →</a>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://images3.alphacoders.com/132/thumbbig-1328396.webp"
+          alt="itachi"
+          class="card-img"
+        />
+        <div class="card-content">
+          <h2 class="card-title">Itachi Uchiha</h2>
+          <p class="card-description">
+            Itachi Uchiha, a genius of the Uchiha clan, mastered the Mangekyō
+            Sharingan and joined the Akatsuki. Seen as a traitor but truly a
+            hero, he sacrificed everything for peace and his brother.
+          </p>
+          <a href="#" class="card-btn">Explore →</a>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://images3.alphacoders.com/132/thumbbig-1328396.webp"
+          alt="itachi"
+          class="card-img"
+        />
+        <div class="card-content">
+          <h2 class="card-title">Itachi Uchiha</h2>
+          <p class="card-description">
+            Itachi Uchiha, a genius of the Uchiha clan, mastered the Mangekyō
+            Sharingan and joined the Akatsuki. Seen as a traitor but truly a
+            hero, he sacrificed everything for peace and his brother.
+          </p>
+          <a href="#" class="card-btn">Explore →</a>
+        </div>
+      </div>
 
+      <div class="card">
+        <img
+          src="https://images3.alphacoders.com/132/thumbbig-1328396.webp"
+          alt="itachi"
+          class="card-img"
+        />
         <div class="card-content">
           <h2 class="card-title">Itachi Uchiha</h2>
           <p class="card-description">
@@ -30,10 +135,107 @@
         </div>
       </div>
     </div>
+
     <div>
-    
-      
-   
-  
+      <h1 style="text-align: center; font-size: 64px; margin-bottom: 44px">
+        Accordion Component
+      </h1>
+    </div>
+    <!-- Accordion Component -->
+
+    <div style="max-width: 1000px" class="accordion">
+      <div class="accordion-item">
+        <input type="checkbox" id="accordion1" />
+        <label for="accordion1" class="accordion-header">
+          Early Life & Struggles
+          <span class="arrow">▼</span>
+        </label>
+        <div class="accordion-content">
+          <p>
+            Naruto was born as the son of the Fourth Hokage, Minato Namikaze,
+            and Kushina Uzumaki. However, after the Nine-Tails attack on Konoha,
+            he grew up as an orphan, facing rejection and loneliness due to the
+            beast sealed inside him.
+          </p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <input type="checkbox" id="accordion4" />
+        <label for="accordion4" class="accordion-header">
+          Early Life & Struggles
+          <span class="arrow">▼</span>
+        </label>
+        <div class="accordion-content">
+          <p>
+            Naruto was born as the son of the Fourth Hokage, Minato Namikaze,
+            and Kushina Uzumaki. However, after the Nine-Tails attack on Konoha,
+            he grew up as an orphan, facing rejection and loneliness due to the
+            beast sealed inside him.
+          </p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <input type="checkbox" id="accordion2" />
+        <label for="accordion2" class="accordion-header">
+          Dream of Becoming Hokage
+          <span class="arrow">▼</span>
+        </label>
+        <div class="accordion-content">
+          <p>
+            Despite being ridiculed and underestimated, Naruto never gave up on
+            his dream of becoming Hokage. Through hard work and determination,
+            he trained under powerful mentors like Kakashi Hatake, Jiraiya, and
+            others.
+          </p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <input type="checkbox" id="accordion3" />
+        <label for="accordion3" class="accordion-header">
+          Friendships & Rivalries
+          <span class="arrow">▼</span>
+        </label>
+        <div class="accordion-content">
+          <p>
+            Naruto’s journey was shaped by his friendships, especially with
+            Sasuke Uchiha and Sakura Haruno. His rivalry with Sasuke pushed him
+            to become stronger, while bonds with Iruka, Kakashi, and Jiraiya
+            provided him with the guidance he needed.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--Buttons -->
+
+    <div>
+      <h1 style="text-align: center; font-size: 64px; margin-bottom: 44px">
+        Buttons Component
+      </h1>
+    </div>
+
+    <div
+      style="
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 32px;
+        justify-content: center;
+      "
+    >
+      <!-- Using as a Button -->
+      <button class="btn btn-orange">Orange Button</button>
+      <button class="btn btn-black">Black Button</button>
+      <button class="btn btn-blue">Blue Button</button>
+      <button class="btn btn-orange" disabled>Disabled Button</button>
+
+      <!-- Using as a Link -->
+      <a href="#" class="btn btn-orange">Orange Link</a>
+      <a href="#" class="btn btn-black">Black Link</a>
+      <a href="#" class="btn btn-blue">Blue Link</a>
+      <a href="#" class="btn btn-orange disabled">Disabled Link</a>
+    </div>
   </body>
 </html>
