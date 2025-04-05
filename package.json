@@ -1,0 +1,25 @@
+{
+  "name": "@bullui/bullui",
+  "version": "1.0.0",
+  "description": "A simple classless UI library",
+  "main": "components.css",
+  "files": [
+    "components.css"
+  ],
+  "exports": {
+    "./components.css": "./components.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abcd-aakarsh/bullui.git"
+  },
+  "keywords": [
+    "UI",
+    "CSS",
+    "Classless",
+    "Lightweight",
+    "Responsive"
+  ],
+  "author": "BullUI Team",
+  "license": "MIT"
+}
